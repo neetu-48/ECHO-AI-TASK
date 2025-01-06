@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.testimonials-heading{
+        font-family:"Outfit", serif;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 57.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+}
+/* accordion */
+.accordion-section .container {
+    max-width: 1140px !important;
+}
 
 .heading {
     font-family: "Outfit", serif;
@@ -7,4 +19,56 @@
     line-height: 57.6px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
+    padding-bottom: 60px;
+}
+
+.accordion {
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-bg: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.accordion-button {
+    font-family: "Outfit", serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-body {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.accordion-item {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-top: 24px !important;
+    border-radius: 12px !important;
+    padding: 24px;
+}
+
+.accordion-item-1 {
+    border-image-source: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%) !important;
+    border: 1px solid transparent;
+    border-image-slice: 1;
+    padding: 24px;
+    border-radius: 12px !important;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+
 }
