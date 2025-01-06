@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.heading {
+    font-family: "Outfit", serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
