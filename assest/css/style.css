@@ -8,10 +8,12 @@
     background-position: center;
     background-size: cover;
 }
+
 /* navbar */
 
 li {
     list-style-type: none !important;
+    margin-top: 30px;
 }
 
 a {
@@ -44,7 +46,7 @@ header {
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .navbar .toggle_btn {
@@ -55,16 +57,19 @@ header {
 }
 
 .action_btn {
-    background-color: orange;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
+    padding: 13px 32px 13px 32px;
     border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
+    border-radius: 57px;
     cursor: pointer;
     transition: scale 0.2 ease;
+    margin-top: 10px !important;
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
 }
 
 .action_btn:hover {
@@ -74,6 +79,43 @@ header {
 
 .action_btn:active {
     scale: 0.95;
+}
+
+/* dropdoun_menu */
+.dropdown_menu {
+    display: none;
+    position: absolute !important;
+    right: 0rem !important;
+    top: 87px !important;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 1000px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img[alt="logo"] {
+    margin-top: 14px !important;
 }
 
 /* section-2 */
@@ -245,4 +287,34 @@ header {
     padding: 24px;
     border-radius: 12px !important;
 }
+
+
 /* responsive design */
+@media(max-width:992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none !important;
+    }
+
+    .navbar .toggle_btn {
+        display: block !important;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:576px) {
+    .dropdown_menu {
+        left: 0rem;
+        width: unset;
+    }
+}
