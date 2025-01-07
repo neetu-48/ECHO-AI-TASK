@@ -9,6 +9,112 @@
     background-size: cover;
 }
 
+.main-heading {
+    font-family: "Outfit", serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 86.4px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sub-heading-1 {
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.action-btn {
+    background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
+    padding: 13px 32px 13px 32px;
+    border: none;
+    outline: none;
+    border-radius: 57px;
+    cursor: pointer;
+    transition: scale 0.2 ease !important;
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 245px;
+}
+
+.action-btn:hover {
+    scale: 1.05 !important;
+    color: #fff !important;
+}
+
+.action-btn:active {
+    scale: 0.95 !important;
+}
+
+img[alt="Group"] {
+    margin-top: 61.71px;
+    position: relative;
+    z-index: 1;
+}
+
+img[alt="ellipse-group"] {
+    position: absolute;
+    left: -205px;
+    top: 276px;
+}
+
+img[alt="layer"] {
+    position: absolute;
+    left: -205px;
+    top: 276px;
+}
+
+.star-1 {
+    position: absolute;
+    top: 485px;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.star-2 {
+    position: absolute;
+    top: 186px;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.star-3 {
+    position: absolute;
+    top: 121px;
+    right: 434px;
+    transform: translateY(50%);
+}
+
+.star-4 {
+    position: absolute;
+    top: 394px;
+    right: 381px;
+    transform: translateY(50%);
+}
+
+.relative {
+    position: relative !important;
+}
+
+img[alt="rocket"] {
+    position: absolute;
+    top: -42%;
+    right: -44px;
+    transform: translateY(50%);
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
 /* navbar */
 
 li {
@@ -98,6 +204,8 @@ header {
 
 .dropdown_menu.open {
     height: 1000px;
+    position: relative;
+    z-index: 99;
 }
 
 .dropdown_menu li {
@@ -216,6 +324,14 @@ img[alt="logo"] {
     align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 .mt-47 {
     padding-top: 47px;
 }
@@ -309,6 +425,12 @@ img[alt="logo"] {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media(min-width:576px) {
+    .pt-290 {
+        padding-top: 280px !important;
     }
 }
 
