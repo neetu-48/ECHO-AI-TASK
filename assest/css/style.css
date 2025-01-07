@@ -461,20 +461,25 @@ img[alt="logo"] {
 
 .line {
     border: 2px solid transparent;
-        border-image-slice: 1;
-margin-top: 60px;
+    border-image-slice: 1;
+    margin-top: 60px;
     border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 47%, rgba(255, 255, 255, 0) 100%);
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* responsive design */
 @media(max-width:992px) {
-.ml-30 {
+    .ml-30 {
         margin-left: 0px;
     }
 
     .ml-50 {
         margin-left: 0px;
     }
+
     .navbar .links,
     .navbar .action_btn {
         display: none !important;
@@ -493,19 +498,20 @@ margin-top: 60px;
     .pt-290 {
         padding-top: 280px !important;
     }
-       
-    
+
+
 }
 
-@media(max-width:320px){
+@media(max-width:320px) {
     .ml-30 {
-            margin-left: 0px;
-        }
-    
-        .ml-50 {
-            margin-left: 0px;
-        }
+        margin-left: 0px;
     }
+
+    .ml-50 {
+        margin-left: 0px;
+    }
+}
+
 @media(max-width:576px) {
     .dropdown_menu {
         left: 0rem;
