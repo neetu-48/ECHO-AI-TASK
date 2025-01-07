@@ -117,12 +117,12 @@ img[alt="rocket"] {
 
 /* navbar */
 
-li {
+.background-img li {
     list-style-type: none !important;
     margin-top: 30px;
 }
 
-a {
+.background-img a {
     text-decoration: none !important;
     font-family: "Outfit", serif;
     font-size: 16px;
@@ -131,7 +131,7 @@ a {
     color: rgba(255, 255, 255, 1) !important;
 }
 
-a:hover {
+.background-img a:hover {
     color: orange !important;
 }
 
@@ -404,10 +404,77 @@ img[alt="logo"] {
     border-radius: 12px !important;
 }
 
+/* footer section */
+.footer-text {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 80%;
+    padding-top: 20px;
+}
+
+.links-li {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.link {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 70%;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.pt-356 {
+    padding-top: 356px;
+    padding-bottom: 30px;
+}
+
+.footer-section a {
+    text-decoration: none;
+}
+
+.footer-section li {
+    list-style-type: none;
+    margin-bottom: 14px;
+}
+
+.ml-30 {
+    margin-left: 107px;
+}
+
+.ml-50 {
+    margin-left: 188px;
+}
+
+.line {
+    border: 2px solid transparent;
+        border-image-slice: 1;
+margin-top: 60px;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 47%, rgba(255, 255, 255, 0) 100%);
+}
 
 /* responsive design */
 @media(max-width:992px) {
+.ml-30 {
+        margin-left: 0px;
+    }
 
+    .ml-50 {
+        margin-left: 0px;
+    }
     .navbar .links,
     .navbar .action_btn {
         display: none !important;
@@ -420,20 +487,25 @@ img[alt="logo"] {
     .dropdown_menu {
         display: block;
     }
-
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 @media(min-width:576px) {
     .pt-290 {
         padding-top: 280px !important;
     }
+       
+    
 }
 
+@media(max-width:320px){
+    .ml-30 {
+            margin-left: 0px;
+        }
+    
+        .ml-50 {
+            margin-left: 0px;
+        }
+    }
 @media(max-width:576px) {
     .dropdown_menu {
         left: 0rem;
